@@ -1,0 +1,463 @@
+/* Start Global Rules */
+:root {
+  --main-color: #ee930b;
+  --main-radius: 15px;
+  --main-transition: 0.2s;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat Arabic";
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+i {
+  margin-top: 2px;
+}
+.btn i {
+  padding-top: 0 !important;
+}
+@media (max-width: 768px) {
+  ul {
+    padding: 0;
+  }
+}
+a {
+  text-decoration: none;
+}
+.whatsapp {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  z-index: 999;
+  background-color: rgb(77, 194, 71) !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.whatsapp i {
+  color: white;
+  font-size: 2rem;
+}
+h1 {
+  position: relative;
+  color: #331b41;
+  font-size: 36px;
+  font-weight: 700;
+}
+h5 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+h1::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 82px;
+  right: 0;
+  background-color: var(--main-color);
+  bottom: -20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  font-size: 14px;
+}
+.head p {
+  color: var(--first-color);
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .head p {
+    font-size: 16px;
+  }
+}
+
+.btn {
+  height: 48px;
+  border: none;
+}
+.btn:hover {
+  background: var(--gradient-color);
+  border: 0;
+}
+.btn i {
+  margin-top: 5px;
+}
+/* End Global Rules */
+/* Fonts */
+@font-face {
+  font-family: "Montserrat Arabic";
+  src: url("../fonts/fonts/Montserrat-Arabic-Black-900.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Arabic";
+  src: url("../fonts/fonts/Montserrat-Arabic-ExtraBold-800.otf")
+    format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Arabic";
+  src: url("../fonts/fonts/Montserrat-Arabic-Bold-700.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Arabic";
+  src: url("../fonts/fonts/Montserrat-Arabic-SemiBold-600.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Arabic";
+  src: url("../fonts/fonts/Montserrat-Arabic-Medium-500.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Arabic";
+  src: url("../fonts/fonts/Montserrat-Arabic-Regular-400.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Arabic";
+  src: url("../fonts/fonts/Montserrat-Arabic-Light-300.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Arabic";
+  src: url("../fonts/fonts/Montserrat-Arabic-ExtraLight-275.otf")
+    format("opentype");
+  font-weight: 275;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat Arabic";
+  src: url("../fonts/fonts/Montserrat-Arabic-Thin-250.otf") format("opentype");
+  font-weight: 250;
+  font-style: normal;
+}
+
+/* Start Contact */
+.form-container .box {
+  height: 234px;
+  width: 261px;
+}
+.login .pic {
+  height: 100vh;
+  background-color: #fafafa;
+}
+.login .pic img {
+  width: 85%;
+}
+.login .pic-sign {
+  height: 100% !important;
+}
+@media (max-width: 992px) {
+  .login .pic {
+    display: none !important;
+  }
+}
+.login .sm-pic {
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.form-container {
+  width: 70%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+}
+.contact-info form input:not(:last-child),
+.form-container form input:not(:last-child),
+.check,
+.form-container form select,
+.form-container form .input {
+  height: 55px;
+  color: #bebebe !important;
+  font-size: 18px;
+  border-radius: 0px;
+  outline: none !important;
+  font-size: 15px;
+  box-shadow: -1px 1px 2px 0px rgb(0 0 0 / 8%);
+  -webkit-box-shadow: -1px 1px 2px 0px rgb(0 0 0 / 8%);
+}
+.contact-info form input:not(:last-child),
+.form-container form input:not(:last-child) {
+  box-shadow: none;
+  height: 56px;
+}
+.form-container form input::placeholder {
+  color: #bebebe;
+}
+.form-container .radio-ch {
+  height: 16px !important;
+}
+.form-container form .input {
+  height: 60px;
+}
+.form-container form .input,
+.form-container form input {
+  background: #f9f9f9 !important;
+  border-radius: 14px;
+}
+.form-container form textarea {
+  background: #f9f9f9 !important;
+  color: #bebebe !important;
+  font-size: 18px;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
+  height: 138px;
+  border-radius: 14px;
+}
+.form-container form input:focus,
+.form-container form textarea:focus {
+  border-color: black;
+  outline: none;
+  box-shadow: 0 1px 0 -1px var(--first-color);
+}
+.form-container .pic img {
+  height: 588px;
+  object-fit: cover;
+}
+.form-container .message {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+.form-container .message:hover {
+  background: var(--gradient-color) !important;
+}
+.form-container #contactButton {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+.form-container #contactButton:hover {
+  background: #000 !important;
+}
+
+@media (max-width: 992px) {
+  .form-container .pic img {
+    display: none;
+  }
+}
+/* .form-container .facebook:hover {
+  background: #0d6efd !important;
+} */
+.form-container .google:hover {
+  background: white !important;
+}
+.form-container .facebook:focus,
+.form-container .facebook:focus-visible,
+.form-container .facebook:active {
+  color: white;
+}
+.form-container .new {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.form-container .new:hover {
+  text-decoration: underline;
+}
+.form-container .contact-info .more {
+  top: -10%;
+  left: 5%;
+  background-color: white;
+  font-size: 14px;
+}
+.form-container .contact-info i {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+}
+.form-container .or span {
+  background-color: white;
+}
+.form-container .or::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: hsl(0deg 0% 0% / 15%);
+}
+.land-contact .x-twitter {
+  width: 49px;
+  height: 48px;
+  top: 107.01px;
+  left: 600px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .insta {
+  width: 48px;
+  height: 48px;
+  top: 435.01px;
+  left: 143px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .youtube {
+  width: 48px;
+  height: 48px;
+  top: 136.01px;
+  left: 154px;
+  gap: 0px;
+  opacity: 0px;
+  z-index: 99;
+}
+.land-contact .facebook {
+  width: 37.14px;
+  height: 37.14px;
+  top: 388px;
+  left: 705.14px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .dot-one {
+  width: 10px;
+  height: 11px;
+  top: 493.01px;
+  left: 135px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .dots-one {
+  width: 57.94px;
+  height: 50.43px;
+  top: 92.66px;
+  left: 202.18px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .dots-two {
+  width: 57.94px;
+  height: 50.43px;
+  top: 567.96px;
+  left: 616.32px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .star-one {
+  width: 19px;
+  height: 20px;
+  top: 398.01px;
+  left: 390px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .star-three {
+  width: 16.71px;
+  height: 16.71px;
+  top: 300.21px;
+  left: 615.64px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .pic-one {
+  position: absolute;
+  top: 142.01px;
+  left: 478px;
+}
+.land-contact .pic-two {
+  position: absolute;
+  width: 476.38px;
+  height: 317.58px;
+  top: 83px;
+  left: 60.55px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .pic-three {
+  position: absolute;
+  width: 395.91px;
+  height: 310.07px;
+  top: 287.93px;
+  left: 348.09px;
+  gap: 0px;
+  opacity: 0px;
+}
+.land-contact .pic-four {
+  position: absolute;
+  width: 161px;
+  height: 161px;
+  top: 437.01px;
+  left: 187px;
+  gap: 0px;
+  border-radius: 100px 0px 0px 0px;
+  opacity: 0px;
+}
+.form-container form .star-four {
+  width: 9.29px;
+  height: 9.29px;
+  top: 65px;
+  left: 255px;
+  gap: 0px;
+  opacity: 0px;
+}
+.form-container form .star-one {
+  width: 16.71px;
+  height: 16.71px;
+  top: 232px;
+  left: -8%;
+  gap: 0px;
+  opacity: 0px;
+}
+.form-container form .star-three {
+  width: 16.71px;
+  height: 16.71px;
+  top: 215px;
+  left: 675px;
+  gap: 0px;
+  opacity: 0px;
+}
+.forms #contactButton {
+  color: white;
+  background: unset !important;
+}
+.forms #contactButton:hover {
+  color: white;
+  background: unset !important;
+}
+/* End Contact */
