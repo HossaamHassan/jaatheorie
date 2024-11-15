@@ -602,7 +602,7 @@ p {
 }
 
 .categories picture img {
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 2 / 1.1;
   object-fit: contain;
 }
 
