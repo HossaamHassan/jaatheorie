@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/accessibility-options.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+    <title>Accessibility Options</title>
+</head>
+
+<body>
+    <section class="accessibility-page ">
+        <div class="contianer">
+            <div class="card bg-secondary p-4 d-flex flex-column m-auto ">
+                <div class="icon-like mb-4 d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <div class="data-access px-4 pb-4 d-flex flex-column gap-1">
+                    <h5 class="mb-4">Accessibility Options</h5>
+                    <div class="form-check form-switch border-bottom pb-2 d-flex align-items-center gap-3">
+                        <input class="form-check-input" type="checkbox" id="audio">
+                        <label class="form-check-label" for="audio">Audio</label>
+                    </div>
+                    <div class="form-check form-switch mt-2 d-flex align-items-center gap-3">
+                        <input class="form-check-input" type="checkbox" id="bold-font">
+                        <label class="form-check-label" for="bold-font">Bold Font</label>
+                    </div>
+                    <div class="form-check form-switch mt-2 d-flex align-items-center gap-3">
+                        <input class="form-check-input" type="checkbox" id="red-green">
+                        <label class="form-check-label" for="red-green">Red-Green Color Blindness</label>
+                    </div>
+                    <div class="form-check form-switch mt-2 d-flex align-items-center gap-3">
+                        <input class="form-check-input" type="checkbox" id="blue-color">
+                        <label class="form-check-label" for="blue-color">Blue-Color Blindness</label>
+                    </div>
+                </div>
+                <div class="bg-btn">
+                    <a href="#" class="button mt-4 border-0 py-2 d-flex justify-content-center"
+                        onclick="startTest()">START
+                        TEST</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const redGreenCheckbox = document.getElementById('red-green');
+        const blueColorCheckbox = document.getElementById('blue-color');
+        const boldFontCheckbox = document.getElementById('bold-font');
+
+        redGreenCheckbox.addEventListener('change', function () {
+            if (redGreenCheckbox.checked) {
+                document.body.classList.add('red-green-bg-color');
+                document.body.classList.remove('blue-bg-color');
+                blueColorCheckbox.checked = false;
+            } else {
+                document.body.classList.remove('red-green-bg-color');
+            }
+        });
+
+        blueColorCheckbox.addEventListener('change', function () {
+            if (blueColorCheckbox.checked) {
+                document.body.classList.add('blue-bg-color');
+                document.body.classList.remove('red-green-bg-color');
+                redGreenCheckbox.checked = false;
+            } else {
+                document.body.classList.remove('blue-bg-color');
+            }
+        });
+
+        boldFontCheckbox.addEventListener('change', function () {
+            if (boldFontCheckbox.checked) {
+                document.body.style.fontWeight = 'bold';
+            } else {
+                document.body.style.fontWeight = '';
+            }
+        });
+
+        function startTest() {
+            alert('Test started with selected options!');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Css Files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../../assets/css/all.min.css" />
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+    <title>Categories</title>
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white p-0 sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo text-center d-flex align-items-center" href="./index.html">
+                <img class="logo-img" src="../assets/img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mb-2 mb-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Welkom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">Oefeningen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./our-board.html">Voorrang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./events.html">Oefentoetsen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact-us.html">Proefexamens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact-us.html">Resultaten</a>
+                    </li>
+                </ul>
+                <a href="#" class="main-btn log">Uitloggen</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Quiz-->
+    <div class="quiz mt-5">
+        <div class="container">
+            <div class="quiz-details d-flex justify-content-center gap-5">
+                <picture>
+                    <img src="../assets/img/quiz-pic.jpeg" alt="" class="mw-100 w-100">
+                </picture>
+                <div class="quiz-content">
+                    <div class="head-quiz">
+                        <h5>Is het gevaarlijk om de navigatie in te stellen tijdens het rijden?</h5>
+                    </div>
+                    <div class="head-choose d-flex flex-column gap-3 mt-4">
+                        <button>
+                            <p>Zowel een geldig rijbewijs als een geldig kentekenbewijs.</p>
+                        </button>
+                        <button>
+                            <p>Alleen een geldig rijbewijs.</p>
+                        </button>
+                        <button>
+                            <p>Alleen een geldig kentekenbewijs.</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Quiz-->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        const quizButton = document.querySelectorAll(".head-choose button");
+        quizButton.forEach((button) => {
+            button.addEventListener("click", () => {
+                Swal.fire({
+                    icon: "success",
+                    title: "Goed",
+                    text: "Als je een rijverbod hebt, dan mag je gedurende een bepaalde periode geen enkel voertuig besturen. Dus ook geen fiets. Een rijverbod kun je krijgen als je teveel alcohol of drugs hebt gebruikt. Een rijverbod wordt direct opgelegd door de politie en duurt maximaal 24 uur. Het is wat anders dan een invordering. Als je rijbewijs is ingevorderd, dan mag je geen voertuigen meer besturen waarvoor een rijbewijs verplicht is. Fietsen zou in dat geval nog wel mogen.",
+                });
+            })
+        })
+
+    </script>
+</body>
+
+</html>
