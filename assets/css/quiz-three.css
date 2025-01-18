@@ -1,7 +1,10 @@
 .img-quiz {
   position: relative;
 }
-.img-quiz .circle {
+.img-quiz .circle,
+.img-quiz .circle-two,
+.img-quiz .circle-three,
+.img-quiz .circle-four {
   position: absolute;
   width: 70px;
   height: 70px;
@@ -12,6 +15,18 @@
   z-index: 1;
   top: 50%;
   left: 50%;
+}
+.img-quiz .circle-two {
+  top: 20%;
+  left: 20%;
+}
+.img-quiz .circle-three {
+  top: 20%;
+  left: 80%;
+}
+.img-quiz .circle-four {
+  top: 80%;
+  left: 20%;
 }
 .circle-answer li {
   width: 70px;
