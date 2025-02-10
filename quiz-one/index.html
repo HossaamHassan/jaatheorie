@@ -65,6 +65,21 @@
                     <div class="head-quiz">
                         <h5>Is het gevaarlijk om de navigatie in te stellen tijdens het rijden?</h5>
                     </div>
+                    <div class="explanation incorrect">
+                        <div class="explanation-content"><!---->
+                            <div class="lead d-flex align-items-center gap-2 mb-2">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <span>
+
+                                    Fout
+                                </span>
+                            </div>
+                            <div class="explanation-text read-aloud-text"><span>Dit is een kruispunt van gelijkwaardige
+                                    wegen en daar moet je bestuurders van rechts voorrang verlenen. Een voetganger is
+                                    geen bestuurder. Daarom mag eerst de auto, dan de bromfiets en als laatste de
+                                    voetganger.</span></div>
+                        </div>
+                    </div>
                     <div class="head-choose d-flex flex-column gap-3 mt-4">
                         <button>
                             <p>Zowel een geldig rijbewijs als een geldig kentekenbewijs.</p>
@@ -82,20 +97,6 @@
     </div>
     <!-- End Quiz-->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        const quizButton = document.querySelectorAll(".head-choose button");
-        quizButton.forEach((button) => {
-            button.addEventListener("click", () => {
-                Swal.fire({
-                    icon: "success",
-                    title: "Goed",
-                    text: "Als je een rijverbod hebt, dan mag je gedurende een bepaalde periode geen enkel voertuig besturen. Dus ook geen fiets. Een rijverbod kun je krijgen als je teveel alcohol of drugs hebt gebruikt. Een rijverbod wordt direct opgelegd door de politie en duurt maximaal 24 uur. Het is wat anders dan een invordering. Als je rijbewijs is ingevorderd, dan mag je geen voertuigen meer besturen waarvoor een rijbewijs verplicht is. Fietsen zou in dat geval nog wel mogen.",
-                });
-            })
-        })
-
-    </script>
 </body>
 
 </html>

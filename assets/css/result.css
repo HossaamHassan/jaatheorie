@@ -1,0 +1,40 @@
+.thumb-up {
+  font-size: 40px;
+  color: green;
+}
+
+.thumb-down {
+  font-size: 40px;
+  color: red;
+}
+
+.status-box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.status-box h5 {
+  margin-bottom: 15px;
+}
+
+.status-box p {
+  margin: 5px 0;
+}
+
+.green-text {
+  color: green;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.red-text {
+  color: red;
+}
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+}
