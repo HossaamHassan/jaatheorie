@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقويم الامتحان</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+            max-width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .day {
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .correct {
+            background-color: #1fb4a6;
+            color: white;
+        }
+
+        .incorrect {
+            background-color: #f54042;
+            color: white;
+        }
+
+        .bookmark {
+            color: #1fb4a6;
+            background-color: transparent;
+            border: 1px solid #1fb4a6;
+        }
+
+        .progress {
+            height: 2rem;
+        }
+
+        .progress .progress-bar {
+            background-color: #1fb4a6;
+
+        }
+    </style>
+</head>
+
+<body class="p-4">
+    <div class="container ">
+        <h2>
+            <i class="thumb-up">👍</i>
+            <!-- <i class="thumb-down">👎</i> -->
+            Result
+        </h2>
+        <!-- شريط التقدم -->
+        <div class="my-3">
+            <label></label>
+            <div class="progress mb-2">
+                <div class="progress-bar" style="width: 70%;">
+                    <h5 class="mb-0">70%</h5>
+                </div>
+            </div>
+            <label></label>
+            <div class="progress">
+                <div class="progress-bar bg-danger" style="width: 30%;">
+                    <h5 class="mb-0">30%</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- التقويم -->
+        <div class="calendar mt-4">
+            <a href="#" class="day bookmark text-decoration-none  ">1</a>
+            <a href="#" class="day incorrect text-decoration-none ">2</a>
+            <a href="#" class="day correct text-decoration-none ">3</a>
+            <a href="#" class="day incorrect text-decoration-none ">4</a>
+            <a href="#" class="day correct text-decoration-none ">5</a>
+            <a href="#" class="day incorrect text-decoration-none ">6</a>
+            <a href="#" class="day correct text-decoration-none ">7</a>
+            <a href="#" class="day correct text-decoration-none ">8</a>
+            <a href="#" class="day incorrect text-decoration-none ">9</a>
+            <a href="#" class="day correct text-decoration-none ">10</a>
+            <a href="#" class="day correct text-decoration-none ">11</a>
+            <a href="#" class="day incorrect text-decoration-none ">12</a>
+            <a href="#" class="day correct text-decoration-none ">13</a>
+            <a href="#" class="day incorrect text-decoration-none ">14</a>
+            <a href="#" class="day correct text-decoration-none ">15</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
